@@ -1,6 +1,17 @@
 ## OSX artifacts
 .DS_Store
 
+# Binaries
+**/bin/
+**/bin-int/
+
+# Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+
 ## Dear ImGui artifacts
 imgui.ini
 
