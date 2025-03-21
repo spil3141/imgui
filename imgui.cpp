@@ -15833,7 +15833,7 @@ void ImGui::ShowMetricsWindow(bool* p_open)
         ImGui::Unindent(ImGui::GetTreeNodeToLabelSpacing());
         bool open = ImGui::TreeNode("Monitors", "Monitors (%d)", g.PlatformIO.Monitors.Size);
         ImGui::SameLine();
-        MetricsHelpMarker("Dear ImGui uses monitor data:\n- to query DPI settings on a per monitor basis\n- to position popup/tooltips so they don't straddle monitors.");
+        MetricsHelpMarker("Dear ImGui uses monitor data:\n- to query DPI settings on a per monitor basis\n- to Position popup/tooltips so they don't straddle monitors.");
         if (open)
         {
             for (int i = 0; i < g.PlatformIO.Monitors.Size; i++)

@@ -769,7 +769,7 @@ static void ShowDemoWindowWidgets()
             ImGui::CheckboxFlags("ImGuiTreeNodeFlags_OpenOnDoubleClick", (unsigned int*)&base_flags, ImGuiTreeNodeFlags_OpenOnDoubleClick);
             ImGui::CheckboxFlags("ImGuiTreeNodeFlags_SpanAvailWidth",    (unsigned int*)&base_flags, ImGuiTreeNodeFlags_SpanAvailWidth); ImGui::SameLine(); HelpMarker("Extend hit area to all available width instead of allowing more items to be laid out after the node.");
             ImGui::CheckboxFlags("ImGuiTreeNodeFlags_SpanFullWidth",     (unsigned int*)&base_flags, ImGuiTreeNodeFlags_SpanFullWidth);
-            ImGui::Checkbox("Align label with current X position", &align_label_with_current_x_position);
+            ImGui::Checkbox("Align label with current X Position", &align_label_with_current_x_position);
             ImGui::Checkbox("Test tree node as drag source", &test_drag_and_drop);
             ImGui::Text("Hello!");
             if (align_label_with_current_x_position)
@@ -2410,7 +2410,7 @@ static void ShowDemoWindowLayout()
     if (ImGui::TreeNode("Groups"))
     {
         HelpMarker(
-            "BeginGroup() basically locks the horizontal position for new line. "
+            "BeginGroup() basically locks the horizontal Position for new line. "
             "EndGroup() bundles the whole group so that you can use \"item\" functions such as "
             "IsItemHovered()/IsItemActive() or SameLine() etc. on the whole group.");
         ImGui::BeginGroup();
@@ -2575,7 +2575,7 @@ static void ShowDemoWindowLayout()
     if (ImGui::TreeNode("Scrolling"))
     {
         // Vertical scroll functions
-        HelpMarker("Use SetScrollHereY() or SetScrollFromPosY() to scroll to a given vertical position.");
+        HelpMarker("Use SetScrollHereY() or SetScrollFromPosY() to scroll to a given vertical Position.");
 
         static int track_item = 50;
         static bool enable_track = true;
@@ -2649,7 +2649,7 @@ static void ShowDemoWindowLayout()
         // Horizontal scroll functions
         ImGui::Spacing();
         HelpMarker(
-            "Use SetScrollHereX() or SetScrollFromPosX() to scroll to a given horizontal position.\n\n"
+            "Use SetScrollHereX() or SetScrollFromPosX() to scroll to a given horizontal Position.\n\n"
             "Because the clipping rectangle of most window hides half worth of WindowPadding on the "
             "left/right, using SetScrollFromPosX(+1) will usually result in clipped text whereas the "
             "equivalent SetScrollFromPosY(+1) wouldn't.");
@@ -4847,7 +4847,7 @@ static void ShowExampleAppPropertyEditor(bool* p_open)
     HelpMarker(
         "This example shows how you may implement a property editor using two columns.\n"
         "All objects/fields data are dummies here.\n"
-        "Remember that in many simple cases, you can use ImGui::SameLine(xxx) to position\n"
+        "Remember that in many simple cases, you can use ImGui::SameLine(xxx) to Position\n"
         "your cursor horizontally instead of using the Columns() API.");
 
     ImGui::PushStyleVar(ImGuiStyleVar_FramePadding, ImVec2(2, 2));
@@ -5032,7 +5032,7 @@ static void ShowExampleAppSimpleOverlay(bool* p_open)
         window_flags |= ImGuiWindowFlags_NoMove;
     if (ImGui::Begin("Example: Simple overlay", p_open, window_flags))
     {
-        ImGui::Text("Simple overlay\n" "in the corner of the screen.\n" "(right-click to change position)");
+        ImGui::Text("Simple overlay\n" "in the corner of the screen.\n" "(right-click to change Position)");
         ImGui::Separator();
         if (ImGui::IsMousePosValid())
             ImGui::Text("Mouse Position: (%.1f,%.1f)", io.MousePos.x, io.MousePos.y);
